@@ -1,4 +1,3 @@
-import { GetSubscriptionInfoByShortUuidCommand } from '@remnawave/backend-contract'
 import { useEffect, useLayoutEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import consola from 'consola/browser'
@@ -14,27 +13,29 @@ export function RootLayout() {
     const [i18nInitialized, setI18nInitialized] = useState(i18n.isInitialized)
 
     useLayoutEffect(() => {
-        const rootDiv = document.getElementById('root')
+        const path = window.location.pathname
+        const token = path.split('/sub/')[1]?.split('/')[0]
 
-        if (rootDiv) {
-            const subscriptionUrl = rootDiv.dataset.panel
-
-            if (subscriptionUrl) {
-                try {
-                    const subscription: GetSubscriptionInfoByShortUuidCommand.Response = JSON.parse(
-                        atob(subscriptionUrl)
-                    )
-
-                    actions.setSubscriptionInfo({
-                        subscription: subscription.response
-                    })
-                } catch (error) {
-                    consola.log(error)
-                } finally {
-                    delete rootDiv.dataset.panel
-                }
-            }
+        if (!token) {
+            consola.error('No subscription token found in URL')
+            return
         }
+
+        fetch(`/sub/${token}/info`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch subscription info: ${response.status}`)
+                }
+                return response.json()
+            })
+            .then(subscriptionData => {
+                actions.setSubscriptionInfo({
+                    subscription: subscriptionData
+                })
+            })
+            .catch(error => {
+                consola.error('Error fetching subscription info:', error)
+            })
     }, [])
 
     useEffect(() => {

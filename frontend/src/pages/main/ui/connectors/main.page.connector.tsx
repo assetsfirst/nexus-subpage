@@ -18,7 +18,7 @@ export const MainPageConnector = () => {
         const fetchConfig = async () => {
             try {
                 const tempConfig = await ofetch<ISubscriptionPageAppConfig>(
-                    `/assets/app-config.json?v=${Date.now()}`,
+                    `../nexus-sub/assets/app-config.json?v=${Date.now()}`,
                     {
                         parseResponse: JSON.parse
                     }

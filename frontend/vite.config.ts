@@ -97,5 +97,6 @@ export default defineConfig({
             '@public': fileURLToPath(new URL('./public', import.meta.url)),
             '@shared': fileURLToPath(new URL('./src/shared', import.meta.url))
         }
-    }
+    },
+    base: '/nexus-sub'
 })

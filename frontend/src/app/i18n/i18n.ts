@@ -18,7 +18,7 @@ i18n.use(initReactI18next)
         load: 'languageOnly',
         preload: ['en', 'ru', 'fa', 'zh'],
         backend: {
-            loadPath: '/locales/{{lng}}/{{ns}}.json'
+            loadPath: '/nexus-sub/locales/{{lng}}/{{ns}}.json'
         },
         interpolation: {
             escapeValue: false
