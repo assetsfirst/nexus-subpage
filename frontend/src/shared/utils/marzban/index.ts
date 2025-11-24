@@ -1,5 +1,5 @@
 import { GetSubscriptionInfoByShortUuidCommand } from '@remnawave/backend-contract'
-import { z } from 'zod'
+import dayjs from 'dayjs'
 
 interface ProxyConfig {
     id: string;
@@ -50,9 +50,9 @@ interface SubscriptionInfo {
 export function mapToRemna(response: SubscriptionInfo): GetSubscriptionInfoByShortUuidCommand.Response['response'] {
 
     // Calculate days left from expire timestamp
-    const now = Date.now()
-    const expireMs = response.expire * 1000
-    const daysLeft = Math.ceil((expireMs - now) / (1000 * 60 * 60 * 24))
+    const now = dayjs(Date.now())
+    const expiresAt = response.expire ? new Date(response.expire * 1000) : new Date(2099, 11, 17)
+    const daysLeft = now.diff(dayjs(expiresAt), 'day')
 
     // Format traffic used (convert bytes to readable format)
     const formatTraffic = (bytes: number): string => {
@@ -73,10 +73,10 @@ export function mapToRemna(response: SubscriptionInfo): GetSubscriptionInfoBySho
             username: response.username,
             shortUuid,
             trafficLimitStrategy: response.data_limit_reset_strategy.toUpperCase() as "DAY" | "MONTH" | "NO_RESET" | "WEEK",
-            daysLeft: Math.max(0, daysLeft), // Ensure non-negative
+            daysLeft,
             trafficUsed: formatTraffic(response.used_traffic),
             trafficLimit: response.data_limit ? formatTraffic(response.data_limit) : "∞",
-            expiresAt: new Date(expireMs),
+            expiresAt,
             isActive: response.status === 'active',
             userStatus: response.status.toUpperCase() as "ACTIVE" | "DISABLED" | "EXPIRED" | "LIMITED"
         },
