@@ -48,13 +48,10 @@ interface SubscriptionInfo {
 }
 
 export function mapToRemna(response: SubscriptionInfo): GetSubscriptionInfoByShortUuidCommand.Response['response'] {
-
-    // Calculate days left from expire timestamp
     const now = dayjs(Date.now())
     const expiresAt = response.expire ? new Date(response.expire * 1000) : new Date(2099, 11, 17)
     const daysLeft = now.diff(dayjs(expiresAt), 'day')
 
-    // Format traffic used (convert bytes to readable format)
     const formatTraffic = (bytes: number): string => {
         if (bytes === 0) return "0"
         const sizes = ['B', 'KB', 'MB', 'GB', 'TB']

@@ -9,6 +9,7 @@ import {
 import { Accordion, rgba, SimpleGrid, Stack, Text, ThemeIcon } from '@mantine/core'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { useTranslation } from 'react-i18next'
+import consola from 'consola/browser'
 import dayjs from 'dayjs'
 
 import {
@@ -26,6 +27,7 @@ export const SubscriptionInfoWidget = () => {
     if (!subscription) return null
 
     const { user } = subscription
+    consola.log(subscription)
 
     const getStatusAndIcon = (): {
         color: string
