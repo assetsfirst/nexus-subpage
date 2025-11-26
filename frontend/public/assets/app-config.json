@@ -298,11 +298,21 @@
                         {
                             "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.2.4/Happ.linux.x64.deb",
                             "buttonText": {
-                                "en": "Linux",
-                                "fa": "لینوکس",
-                                "ru": "Linux",
-                                "zh": "Linux",
-                                "fr": "Linux"
+                                "en": "amd64 (.deb)",
+                                "fa": "amd64 (.deb)",
+                                "ru": "amd64 (.deb)",
+                                "zh": "amd64 (.deb)",
+                                "fr": "amd64 (.deb)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.2.4/Happ.linux.x64.rpm",
+                            "buttonText": {
+                                "en": "amd64 (.rpm)",
+                                "fa": "amd64 (.rpm)",
+                                "ru": "amd64 (.rpm)",
+                                "zh": "amd64 (.rpm)",
+                                "fr": "amd64 (.rpm)"
                             }
                         }
                     ],
