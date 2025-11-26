@@ -50,7 +50,7 @@ interface SubscriptionInfo {
 export function mapToRemna(response: SubscriptionInfo): GetSubscriptionInfoByShortUuidCommand.Response['response'] {
     const now = dayjs(Date.now())
     const expiresAt = response.expire ? new Date(response.expire * 1000) : new Date(2099, 11, 17)
-    const daysLeft = now.diff(dayjs(expiresAt), 'day')
+    const daysLeft = dayjs(expiresAt).diff(dayjs(now), 'day')
 
     const formatTraffic = (bytes: number): string => {
         if (bytes === 0) return "0"
