@@ -117,7 +117,7 @@
             {
                 "id": "flclashx",
                 "name": "FlClashX",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -299,9 +299,54 @@
         ],
         "linux": [
             {
+                "id": "happ",
+                "name": "Happ",
+                "isFeatured": true,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.2.4/Happ.linux.x64.deb",
+                            "buttonText": {
+                                "en": "Linux",
+                                "fa": "لینوکس",
+                                "ru": "Linux",
+                                "zh": "Linux",
+                                "fr": "Linux"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。",
+                        "fr": "Choisis la version pour ton appareil, clique sur le bouton ci‑dessous et installe l’app."
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮——应用将会打开，订阅会自动添加。",
+                        "fr": "Clique sur le bouton ci‑dessous — l’app s’ouvrira et l’abonnement sera ajouté automatiquement."
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。",
+                        "fr": "Dans la section principale, appuie sur le grand bouton central pour te connecter au VPN. N’oublie pas de choisir un serveur dans la liste ; si besoin, choisis‑en un autre."
+                    }
+                }
+            },
+            {
                 "id": "flclashx",
                 "name": "FlClashX",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -393,7 +438,7 @@
             {
                 "id": "koala-clash",
                 "name": "Koala Clash",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "koala-clash://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -502,7 +547,7 @@
             {
                 "id": "prizrak-box",
                 "name": "Prizrak-Box",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "prizrak-box://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -607,22 +652,34 @@
                         "fr": "Sélectionne l’abonnement ajouté dans « « Profiles » ». Tu peux choisir le pays du serveur dans « « Proxy » » (🚀). Active l’interrupteur « « TUN » »."
                     }
                 }
-            },
+            }
+        ],
+        "macos": [
             {
                 "id": "happ",
-                "name": "Happ (alpha)",
-                "isFeatured": false,
+                "name": "Happ",
+                "isFeatured": true,
                 "urlScheme": "happ://add/",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x86.AppImage",
+                            "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
                             "buttonText": {
-                                "en": "Linux",
-                                "fa": "لینوکس",
-                                "ru": "Linux",
-                                "zh": "Linux",
-                                "fr": "Linux"
+                                "en": "RU App Store",
+                                "fa": "اپ استور روسیه",
+                                "ru": "RU App Store",
+                                "zh": "俄罗斯 App Store",
+                                "fr": "App Store RU"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
+                            "buttonText": {
+                                "en": "Global App Store",
+                                "fa": "اپ استور جهانی",
+                                "ru": "Глобальный App Store",
+                                "zh": "全球 App Store",
+                                "fr": "App Store global"
                             }
                         }
                     ],
@@ -652,13 +709,11 @@
                         "fr": "Dans la section principale, appuie sur le grand bouton central pour te connecter au VPN. N’oublie pas de choisir un serveur dans la liste ; si besoin, choisis‑en un autre."
                     }
                 }
-            }
-        ],
-        "macos": [
+            },
             {
                 "id": "koala-clash",
                 "name": "Koala Clash",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "koala-clash://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -745,64 +800,9 @@
                 }
             },
             {
-                "id": "happ",
-                "name": "Happ (alpha)",
-                "isFeatured": false,
-                "urlScheme": "happ://add/",
-                "installationStep": {
-                    "buttons": [
-                        {
-                            "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
-                            "buttonText": {
-                                "en": "RU App Store",
-                                "fa": "اپ استور روسیه",
-                                "ru": "RU App Store",
-                                "zh": "俄罗斯 App Store",
-                                "fr": "App Store RU"
-                            }
-                        },
-                        {
-                            "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
-                            "buttonText": {
-                                "en": "Global App Store",
-                                "fa": "اپ استور جهانی",
-                                "ru": "Глобальный App Store",
-                                "zh": "全球 App Store",
-                                "fr": "App Store global"
-                            }
-                        }
-                    ],
-                    "description": {
-                        "en": "Choose the version for your device, click the button below and install the app.",
-                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
-                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
-                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。",
-                        "fr": "Choisis la version pour ton appareil, clique sur le bouton ci‑dessous et installe l’app."
-                    }
-                },
-                "addSubscriptionStep": {
-                    "description": {
-                        "en": "Click the button below — the app will open and the subscription will be added automatically",
-                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
-                        "zh": "点击下方按钮——应用将会打开，订阅会自动添加。",
-                        "fr": "Clique sur le bouton ci‑dessous — l’app s’ouvrira et l’abonnement sera ajouté automatiquement."
-                    }
-                },
-                "connectAndUseStep": {
-                    "description": {
-                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
-                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
-                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
-                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。",
-                        "fr": "Dans la section principale, appuie sur le grand bouton central pour te connecter au VPN. N’oublie pas de choisir un serveur dans la liste ; si besoin, choisis‑en un autre."
-                    }
-                }
-            },
-            {
                 "id": "flclashx",
                 "name": "FlClashX",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -974,9 +974,54 @@
         ],
         "windows": [
             {
+                "id": "happ",
+                "name": "Happ",
+                "isFeatured": true,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.2.4/setup-Happ.x64.exe",
+                            "buttonText": {
+                                "en": "Windows",
+                                "fa": "ویندوز",
+                                "ru": "Windows",
+                                "zh": "Windows",
+                                "fr": "Windows"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。",
+                        "fr": "Choisis la version pour ton appareil, clique sur le bouton ci‑dessous et installe l’app."
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮——应用将会打开，订阅会自动添加。",
+                        "fr": "Clique sur le bouton ci‑dessous — l’app s’ouvrira et l’abonnement sera ajouté automatiquement."
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。",
+                        "fr": "Dans la section principale, appuie sur le grand bouton central pour te connecter au VPN. N’oublie pas de choisir un serveur dans la liste ; si besoin, choisis‑en un autre."
+                    }
+                }
+            },,
+            {
                 "id": "flclashx",
                 "name": "FlClashX",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -1068,7 +1113,7 @@
             {
                 "id": "koala-clash",
                 "name": "Koala Clash",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "koala-clash://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -1157,7 +1202,7 @@
             {
                 "id": "prizrak-box",
                 "name": "Prizrak-Box",
-                "isFeatured": true,
+                "isFeatured": false,
                 "urlScheme": "prizrak-box://install-config?url=",
                 "installationStep": {
                     "buttons": [
@@ -1260,51 +1305,6 @@
                         "ru": "Выберите добавленную подписку в разделе Профили. Выбрать страну сервера можно в разделе Прокси (🚀). Установите переключатель TUN в положение ВКЛ.",
                         "zh": "在“配置文件”部分选择已添加的订阅。可在“代理 (🚀)”部分选择服务器国家。将 TUN 开关切换到开启。",
                         "fr": "Sélectionne l’abonnement ajouté dans « « Profiles » ». Tu peux choisir le pays du serveur dans « « Proxy » » (🚀). Active l’interrupteur « « TUN » »."
-                    }
-                }
-            },
-            {
-                "id": "happ",
-                "name": "Happ (alpha)",
-                "isFeatured": false,
-                "urlScheme": "happ://add/",
-                "installationStep": {
-                    "buttons": [
-                        {
-                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
-                            "buttonText": {
-                                "en": "Windows",
-                                "fa": "ویندوز",
-                                "ru": "Windows",
-                                "zh": "Windows",
-                                "fr": "Windows"
-                            }
-                        }
-                    ],
-                    "description": {
-                        "en": "Choose the version for your device, click the button below and install the app.",
-                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
-                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
-                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。",
-                        "fr": "Choisis la version pour ton appareil, clique sur le bouton ci‑dessous et installe l’app."
-                    }
-                },
-                "addSubscriptionStep": {
-                    "description": {
-                        "en": "Click the button below — the app will open and the subscription will be added automatically",
-                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
-                        "zh": "点击下方按钮——应用将会打开，订阅会自动添加。",
-                        "fr": "Clique sur le bouton ci‑dessous — l’app s’ouvrira et l’abonnement sera ajouté automatiquement."
-                    }
-                },
-                "connectAndUseStep": {
-                    "description": {
-                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
-                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
-                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
-                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。",
-                        "fr": "Dans la section principale, appuie sur le grand bouton central pour te connecter au VPN. N’oublie pas de choisir un serveur dans la liste ; si besoin, choisis‑en un autre."
                     }
                 }
             }
