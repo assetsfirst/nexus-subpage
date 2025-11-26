@@ -2,15 +2,12 @@
 {
     "config": {
         "additionalLocales": [
-            "fa",
-            "ru",
-            "zh",
-            "fr"
+            "ru"
         ],
         "branding": {
-            "name": "Subscription",
+            "name": "Nexus",
             "logoUrl": "https://remna.st/img/logo.svg",
-            "supportUrl": "https://t.me"
+            "supportUrl": "https://t.me/nexus_assetsfirst_support"
         }
     },
     "platforms": {

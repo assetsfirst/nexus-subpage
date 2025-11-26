@@ -14,3 +14,15 @@ Thanks to the all contributors who have helped improve Remnawave:
   <img src="https://contrib.rocks/image?repo=remnawave/subscription-page" />
 </a>
 </p>
+
+```
+scp -r subscription-page/dist/assets root@94.232.44.30:/var/lib/marzban/nexus-sub
+scp -r subscription-page/dist/locales root@94.232.44.30:/var/lib/marzban/nexus-sub
+scp -r subscription-page/dist/index.html root@94.232.44.30:/var/lib/marzban/templates/subscription/index.html
+
+
+        handle_path /nexus-sub/* {
+            root * /var/lib/marzban/nexus-sub
+            file_server
+        }
+```
