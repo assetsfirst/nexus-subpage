@@ -7,7 +7,7 @@
         "branding": {
             "name": "Nexus",
             "logoUrl": "/nexus-sub/assets/logo.png",
-            "supportUrl": "https://t.me/nexus_assetsfirst_support"
+            "supportUrl": "https://t.me/nexus_assetsfirst_bot"
         }
     },
     "platforms": {
@@ -271,7 +271,7 @@
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
                         "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите кнопку на этой странице «получить ссылку» в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите «Отправить»",
                         "zh": "如果点击按钮后没有反应，请手动添加订阅。在本页右上角点击获取链接按钮，复制链接。在 FlClash 的 Profiles 部分点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。",
                         "fr": "Si rien ne se passe après le clic, ajoute l’abonnement manuellement. Sur cette page, clique sur « « Get Link » » en haut à droite et copie le lien. Dans FlClash, va dans « « Profiles » », appuie sur « + », choisis « « URL » », colle le lien copié puis appuie sur « Send »."
                     }
@@ -280,7 +280,7 @@
                     "description": {
                         "en": "Select the added profile in the Profiles section. In the Control Panel, click the Enable button in the bottom right corner. Once it's running, you can change the server you're connected to in the Proxy section.",
                         "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
-                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "ru": "Выберите добавленный профиль в разделе «Профили». В «Панели управления» нажмите кнопку «Включить» в правом нижнем углу. После запуска в разделе «Прокси» вы можете изменить выбор сервера к которому вы хотите подключиться",
                         "zh": "在 Profiles 部分选择已添加的配置文件。在控制面板右下角点击启用按钮。启动后，你可以在 Proxy 部分更换连接的服务器。",
                         "fr": "Sélectionne le profil ajouté dans « « Profiles » ». Dans le panneau de contrôle, clique sur « « Enable » » en bas à droite. Une fois lancé, tu peux changer de serveur dans la section « « Proxy » »."
                     }
@@ -420,7 +420,7 @@
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
                         "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите кнопку на этой странице «получить ссылку» в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите «Отправить»",
                         "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。",
                         "fr": "Si rien ne se passe après le clic, ajoute l’abonnement manuellement. Sur cette page, clique sur « « Get Link » » en haut à droite et copie le lien. Dans FlClash, va dans « « Profiles » », appuie sur « + », choisis « « URL » », colle le lien copié puis appuie sur « Send »."
                     }
@@ -429,7 +429,7 @@
                     "description": {
                         "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
                         "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
-                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "ru": "Выберите добавленный профиль в разделе «Профили». В «Панели управления» нажмите кнопку «Включить» в правом нижнем углу, а затем сдвиньте переключатель у пункта TUN. После запуска в разделе «Прокси» вы можете изменить выбор сервера к которому вы хотите подключиться.",
                         "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮，然后打开 TUN 项旁边的开关。启动后，在代理部分可以更改所连接的服务器。",
                         "fr": "Sélectionne le profil ajouté dans « « Profiles » ». Dans le tableau de bord, clique sur le bouton d’activation en bas à droite, puis active l’interrupteur à côté de « « TUN » ». Après le lancement, dans « « Proxy » », tu peux changer le serveur de connexion."
                     }
@@ -549,7 +549,7 @@
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
                         "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите кнопку на этой странице «получить ссылку» в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите «Отправить»",
                         "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。",
                         "fr": "Si rien ne se passe après le clic, ajoute l’abonnement manuellement. Sur cette page, clique sur « « Get Link » » en haut à droite et copie le lien. Dans FlClash, va dans « « Profiles » », appuie sur « + », choisis « « URL » », colle le lien copié puis appuie sur « Send »."
                     }
@@ -558,7 +558,7 @@
                     "description": {
                         "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
                         "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
-                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "ru": "Выберите добавленный профиль в разделе «Профили». В «Панели управления» нажмите кнопку «Включить» в правом нижнем углу, а затем сдвиньте переключатель у пункта TUN. После запуска в разделе «Прокси» вы можете изменить выбор сервера к которому вы хотите подключиться.",
                         "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮，然后打开 TUN 项旁边的开关。启动后，在代理部分可以更改所连接的服务器。",
                         "fr": "Sélectionne le profil ajouté dans « « Profiles » ». Dans le tableau de bord, clique sur le bouton d’activation en bas à droite, puis active l’interrupteur à côté de « « TUN » ». Après le lancement, dans « « Proxy » », tu peux changer le serveur de connexion."
                     }
@@ -688,7 +688,7 @@
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
                         "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите кнопку на этой странице «получить ссылку» в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите «Отправить»",
                         "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。",
                         "fr": "Si rien ne se passe après le clic, ajoute l’abonnement manuellement. Sur cette page, clique sur « « Get Link » » en haut à droite et copie le lien. Dans FlClash, va dans « « Profiles » », appuie sur « + », choisis « « URL » », colle le lien copié puis appuie sur « Send »."
                     }
@@ -697,7 +697,7 @@
                     "description": {
                         "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
                         "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
-                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "ru": "Выберите добавленный профиль в разделе «Профили». В «Панели управления» нажмите кнопку «Включить» в правом нижнем углу, а затем сдвиньте переключатель у пункта TUN. После запуска в разделе «Прокси» вы можете изменить выбор сервера к которому вы хотите подключиться.",
                         "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮，然后打开 TUN 项旁边的开关。启动后，在代理部分可以更改所连接的服务器。",
                         "fr": "Sélectionne le profil ajouté dans « « Profiles » ». Dans le tableau de bord, clique sur le bouton d’activation en bas à droite, puis active l’interrupteur à côté de « « TUN » ». Après le lancement, dans « « Proxy » », tu peux changer le serveur de connexion."
                     }
@@ -892,7 +892,7 @@
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
                         "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите кнопку на этой странице «получить ссылку» в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите «Отправить»",
                         "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。",
                         "fr": "Si rien ne se passe après le clic, ajoute l’abonnement manuellement. Sur cette page, clique sur « « Get Link » » en haut à droite et copie le lien. Dans FlClash, va dans « « Profiles » », appuie sur « + », choisis « « URL » », colle le lien copié puis appuie sur « Send »."
                     }
@@ -901,7 +901,7 @@
                     "description": {
                         "en": "Select the added profile in the Profiles section. In the Control Panel, click the Enable button in the bottom right corner. Once it's running, you can change the server you're connected to in the Proxy section.",
                         "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
-                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "ru": "Выберите добавленный профиль в разделе «Профили». В «Панели управления» нажмите кнопку «Включить» в правом нижнем углу. После запуска в разделе «Прокси» вы можете изменить выбор сервера к которому вы хотите подключиться.",
                         "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮。运行后，你可以在“代理”部分更改所连接的服务器。",
                         "fr": "Sélectionne le profil ajouté dans « « Profiles » ». Dans le panneau de contrôle, clique sur « « Enable » » en bas à droite. Une fois lancé, tu peux changer de serveur dans la section « « Proxy » »."
                     }
