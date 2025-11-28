@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
+    <title>Nexus - Redirect Page</title>
     <style>
         /* Импорт шрифта */
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600&display=swap');
@@ -30,7 +30,7 @@
 
         /* Темная тема */
         body.dark {
-            background-color: #2a2a3d;
+            background-color: rgb(22, 27, 34);
             color: #ddd;
         }
 
@@ -42,7 +42,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('https://i.ibb.co/HqRwCSL/Pattern-Copy-1.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -52,10 +51,8 @@
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.2);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(10px);
             max-width: 400px;
             width: 90%;
@@ -124,11 +121,7 @@
             document.getElementById('instructions').innerText = instructionsText;
 
             // Определяем тему
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.body.classList.add('dark');
-            } else {
-                document.body.classList.add('light');
-            }
+            document.body.classList.add('dark');
 
             if (redirectTo) {
                 setTimeout(() => {
