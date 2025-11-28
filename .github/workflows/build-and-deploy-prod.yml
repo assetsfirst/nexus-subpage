@@ -1,10 +1,6 @@
 name: Build and deploy frontend to prod
 
 on:
-  push:
-    branches:
-      - marzban
-
   workflow_dispatch:
 
 jobs:
