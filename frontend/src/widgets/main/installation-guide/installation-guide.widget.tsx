@@ -110,7 +110,8 @@ export const InstallationGuideWidget = ({
             const encodedUrl = `${urlScheme}${encoded}`
             window.open(encodedUrl, '_blank')
         } else {
-            window.open(`${urlScheme}${subscriptionUrl}`, '_blank')
+            const baseUrl = window.location.origin
+            window.open(`${baseUrl}/nexus-sub/assets/redirect-page?redirect_to=${urlScheme}${subscriptionUrl}`, '_blank')
         }
     }
 
