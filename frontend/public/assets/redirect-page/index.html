@@ -112,21 +112,27 @@
             const titleText = isRussian ? 'Продолжить' : 'Continue';
             const buttonText = isRussian ? 'Нажмите сюда, чтобы продолжить' : 'Click here to proceed';
             const instructionsText = isRussian
-                ? 'Чтобы перейти далее, нажмите на кнопку выше.'
-                : 'To continue, please click the button above.';
+                ? 'Переадресация произойдёт автоматически в течение 5 секунд.\nЕсли этого не произошло, нажмите на кнопку выше.'
+                : 'You will be redirected automatically within 5 seconds.\nIf nothing happens, please click the button above.';
 
             //document.getElementById('title').innerText = titleText;
-            document.getElementById('redirectLink').innerText = buttonText;
-            document.getElementById('redirectLink').href = redirectTo;
+            const linkEl = document.getElementById('redirectLink');
+            linkEl.innerText = buttonText;
+            linkEl.href = redirectTo;
             document.getElementById('instructions').innerText = instructionsText;
 
             // Определяем тему
             document.body.classList.add('dark');
 
+            let redirectTimer;
             if (redirectTo) {
-                setTimeout(() => {
+                redirectTimer = setTimeout(() => {
                     window.location.href = redirectTo;
-                }, 5000); // Автоматическое перенаправление через 5 секунд
+                }, 5000);
+
+                linkEl.addEventListener('click', function () {
+                    clearTimeout(redirectTimer);
+                });
             } else {
                 alert(isRussian ? 'Не указана ссылка для перенаправления.' : 'No redirect link specified.');
             }
