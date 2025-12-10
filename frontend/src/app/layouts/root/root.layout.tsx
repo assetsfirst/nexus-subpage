@@ -22,7 +22,9 @@ export function RootLayout() {
             return
         }
 
-        fetch(`/sub/${token}/info`)
+        const urlPrefix = `/sub/${token}/info`
+        const url = import.meta.env.DEV ? import.meta.env.VITE_API_URL + urlPrefix : urlPrefix
+        fetch(url)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Failed to fetch subscription info: ${response.status}`)

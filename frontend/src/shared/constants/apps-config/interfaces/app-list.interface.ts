@@ -44,6 +44,7 @@ export interface ISubscriptionPageConfiguration {
     branding?: {
         logoUrl?: string
         name?: string
+        renewUrl?: string
         supportUrl?: string
     }
 }

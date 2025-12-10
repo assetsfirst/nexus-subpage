@@ -59,7 +59,10 @@
             "inactive": "Неактивна",
             "expires": "Истекает",
             "at": "В",
-            "bandwidth": "Трафик"
+            "bandwidth": "Трафик",
+            "renew-now": "ПРОДЛИТЬ",
+            "expired-title": "Подписка Истекла",
+            "renew-info": "Нажмите чтобы продлить подписку"
         }
     },
     "get-expiration-text": {

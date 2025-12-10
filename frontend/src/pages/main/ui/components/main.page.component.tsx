@@ -63,7 +63,7 @@ export const MainPageComponent = ({
                 </Group>
 
                 <Stack gap="xl">
-                    <SubscriptionInfoWidget />
+                    <SubscriptionInfoWidget renewUrl={subscriptionPageAppConfig.config.branding?.renewUrl}/>
                     <InstallationGuideWidget
                         appsConfig={subscriptionPageAppConfig.platforms}
                         enabledLocales={additionalLocales}

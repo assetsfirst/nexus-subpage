@@ -8,7 +8,7 @@ i18n.use(initReactI18next)
     .use(HttpApi)
     .init({
         fallbackLng: 'ru',
-        debug: process.env.NODE_ENV === 'development',
+        debug: import.meta.env.MODE === 'development',
         defaultNS: ['main'],
         ns: ['main'],
         detection: {
@@ -18,7 +18,7 @@ i18n.use(initReactI18next)
         load: 'languageOnly',
         preload: ['en', 'ru'],
         backend: {
-            loadPath: '/nexus-sub/locales/{{lng}}/{{ns}}.json'
+            loadPath: `${import.meta.env.BASE_URL}/locales/{{lng}}/{{ns}}.json`
         },
         interpolation: {
             escapeValue: false

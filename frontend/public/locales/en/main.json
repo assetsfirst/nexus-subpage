@@ -58,7 +58,10 @@
             "inactive": "Inactive",
             "expires": "Expires",
             "at": "At",
-            "bandwidth": "Bandwidth"
+            "bandwidth": "Bandwidth",
+            "renew-now": "RENEW NOW",
+            "expired-title": "Subscription Expired",
+            "renew-info": "Press to renew subscription"
         }
     },
     "get-expiration-text": {

@@ -3,10 +3,11 @@ import {
     IconArrowsUpDown,
     IconCalendar,
     IconCheck,
+    IconRefresh,
     IconUser,
     IconX
 } from '@tabler/icons-react'
-import { Accordion, rgba, SimpleGrid, Stack, Text, ThemeIcon } from '@mantine/core'
+import { Accordion, Box, Button, Group, rgba, SimpleGrid, Stack, Text, ThemeIcon, Tooltip } from '@mantine/core'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { useTranslation } from 'react-i18next'
 import consola from 'consola/browser'
@@ -20,7 +21,7 @@ import { useSubscriptionInfoStoreInfo } from '@entities/subscription-info-store'
 import { InfoBlockShared } from '@shared/ui/info-block/info-block.shared'
 
 dayjs.extend(relativeTime)
-export const SubscriptionInfoWidget = () => {
+export const SubscriptionInfoWidget = ({ renewUrl }: { renewUrl?: string }) => {
     const { t, i18n } = useTranslation()
     const { subscription } = useSubscriptionInfoStoreInfo()
 
@@ -54,7 +55,7 @@ export const SubscriptionInfoWidget = () => {
 
         return {
             color: 'red',
-            icon: <IconX size={20} />,
+            icon: <IconRefresh size={20} />,
             status: t('subscription-info.widget.inactive')
         }
     }
@@ -69,22 +70,53 @@ export const SubscriptionInfoWidget = () => {
             variant="separated"
         >
             <Accordion.Item value="subscription-info">
-                <Accordion.Control
-                    icon={
-                        <ThemeIcon color={getStatusAndIcon().color} size="lg" variant="light">
-                            {getStatusAndIcon().icon}
-                        </ThemeIcon>
-                    }
-                >
-                    <Stack gap={3}>
-                        <Text fw={500} size="md" truncate>
-                            {user.username}
-                        </Text>
-                        <Text c={user.daysLeft === 0 ? 'red' : 'dimmed'} size="xs">
-                            {getExpirationTextUtil(user.expiresAt, t, i18n)}
-                        </Text>
-                    </Stack>
-                </Accordion.Control>
+                <Box pos="relative">
+                    <Accordion.Control
+                        icon={
+                            <ThemeIcon color={getStatusAndIcon().color} size="lg" variant="light">
+                                {getStatusAndIcon().icon}
+                            </ThemeIcon>
+                        }
+                    >
+                        <Group justify="space-between" w="100%" wrap="nowrap">
+                            <Stack gap={3} style={{ flex: 1, minWidth: 0 }}>
+                                <Text fw={500} size="md" truncate>
+                                    {user.userStatus !== 'ACTIVE' ? t('subscription-info.widget.expired-title') : user.username}
+                                </Text>
+                                <Text c={user.daysLeft === 0 ? 'red' : 'dimmed'} size="xs">
+                                    {getExpirationTextUtil(user.expiresAt, t, i18n)}
+                                </Text>
+                            </Stack>
+
+                            {user.userStatus !== 'ACTIVE' && (
+                                <Box w={100} />
+                            )}
+                        </Group>
+
+                    </Accordion.Control>
+                    {user.userStatus !== 'ACTIVE' && (
+                        <Box
+                            pos="absolute"
+                            right={16}
+                            style={{ transform: 'translateY(-50%)', zIndex: 1 }}
+                            top="50%"
+                        >
+                            <Tooltip label={t('subscription-info.widget.renew-info')}>
+                                <Button
+                                    component="a"
+                                    href={renewUrl}
+                                    onClick={(event) => event.stopPropagation()}
+                                    rel="noopener noreferrer"
+                                    size="sm"
+                                    target="_blank"
+                                    variant="filled"
+                                >
+                                    {t('subscription-info.widget.renew-now')}
+                                </Button>
+                            </Tooltip>
+                        </Box>
+                    )}
+                </Box>
                 <Accordion.Panel>
                     <SimpleGrid cols={{ base: 1, sm: 2, xs: 2 }} spacing="xs" verticalSpacing="sm">
                         <InfoBlockShared

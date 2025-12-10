@@ -17,8 +17,10 @@ export const MainPageConnector = () => {
     useEffect(() => {
         const fetchConfig = async () => {
             try {
+                const baseUrl = window.location.origin
+                const urlPrefix = `/assets/app-config.json?v=${Date.now()}`
                 const tempConfig = await ofetch<ISubscriptionPageAppConfig>(
-                    `../nexus-sub/assets/app-config.json?v=${Date.now()}`,
+                    baseUrl + import.meta.env.BASE_URL + urlPrefix,
                     {
                         parseResponse: JSON.parse
                     }
