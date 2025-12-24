@@ -4,7 +4,7 @@ import consola from 'consola/browser'
 
 import { useSubscriptionInfoStoreActions } from '@entities/subscription-info-store/subscription-info-store'
 import { LoadingScreen } from '@shared/ui/loading-screen/loading-screen'
-import { mapToRemna } from '@shared/utils/marzban'
+import { mapToRemna } from 'src/shared/utils/subscription-converter'
 
 import classes from './root.module.css'
 import i18n from '../../i18n/i18n'
@@ -24,8 +24,8 @@ export function RootLayout() {
 
         const baseUrl = window.location.origin
         const urlPrefix = `/sub/${token}/info`
-        const url = import.meta.env.DEV ? import.meta.env.VITE_API_URL + urlPrefix : baseUrl + urlPrefix
-        fetch(url)
+        const subscriptionUrl = import.meta.env.DEV ? import.meta.env.VITE_API_URL + urlPrefix : baseUrl + urlPrefix
+        fetch(subscriptionUrl)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Failed to fetch subscription info: ${response.status}`)
@@ -33,7 +33,7 @@ export function RootLayout() {
                 return response.json()
             })
             .then(subscriptionData => {
-                const subscription = mapToRemna(subscriptionData)
+                const subscription = mapToRemna(subscriptionUrl, subscriptionData)
                 actions.setSubscriptionInfo({
                     subscription
                 })

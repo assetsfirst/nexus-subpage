@@ -47,7 +47,7 @@ interface SubscriptionInfo {
     subscription_url: string;
 }
 
-export function mapToRemna(response: SubscriptionInfo): GetSubscriptionInfoByShortUuidCommand.Response['response'] {
+export function mapToRemna(subscriptionUrl: string, response: SubscriptionInfo): GetSubscriptionInfoByShortUuidCommand.Response['response'] {
     const now = dayjs(Date.now())
     const expiresAt = response.expire ? new Date(response.expire * 1000) : new Date(2099, 11, 17)
     const daysLeft = dayjs(expiresAt).diff(dayjs(now), 'day')
@@ -59,10 +59,10 @@ export function mapToRemna(response: SubscriptionInfo): GetSubscriptionInfoBySho
         return `${Math.round(bytes / 1024**i * 100) / 100  } ${  sizes[i]}`
     }
 
-    const shortUuid = response.subscription_url.split('/sub/')[1]?.split('/')[0] ?? ''
+    const shortUuid = (response.subscription_url ?? subscriptionUrl).split('/sub/')[1]?.split('/')[0] ?? ''
 
     return {
-        subscriptionUrl: response.subscription_url,
+        subscriptionUrl: response.subscription_url ?? subscriptionUrl,
         happ: {
             cryptoLink: ''
         },

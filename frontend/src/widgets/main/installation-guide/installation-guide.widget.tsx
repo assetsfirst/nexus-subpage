@@ -110,7 +110,7 @@ export const InstallationGuideWidget = ({
             const encodedUrl = `${urlScheme}${encoded}`
             window.open(encodedUrl, '_blank')
         } else {
-            const baseUrl = window.location.origin
+            const baseUrl = import.meta.env.DEV ? import.meta.env.VITE_API_URL : window.location.origin
             window.open(`${baseUrl}/assets/redirect-page?redirect_to=${urlScheme}${subscriptionUrl}`, '_blank')
         }
     }
