@@ -22,8 +22,9 @@ export function RootLayout() {
             return
         }
 
+        const baseUrl = window.location.origin
         const urlPrefix = `/sub/${token}/info`
-        const url = import.meta.env.DEV ? import.meta.env.VITE_API_URL + urlPrefix : urlPrefix
+        const url = import.meta.env.DEV ? import.meta.env.VITE_API_URL + urlPrefix : baseUrl + urlPrefix
         fetch(url)
             .then(response => {
                 if (!response.ok) {
