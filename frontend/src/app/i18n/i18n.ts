@@ -18,7 +18,7 @@ i18n.use(initReactI18next)
         load: 'languageOnly',
         preload: ['en', 'ru'],
         backend: {
-            loadPath: `${import.meta.env.BASE_URL}/locales/{{lng}}/{{ns}}.json`
+            loadPath: `/locales/{{lng}}/{{ns}}.json`
         },
         interpolation: {
             escapeValue: false

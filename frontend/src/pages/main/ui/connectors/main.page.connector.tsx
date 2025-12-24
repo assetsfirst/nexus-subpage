@@ -20,7 +20,7 @@ export const MainPageConnector = () => {
                 const baseUrl = window.location.origin
                 const urlPrefix = `/assets/app-config.json?v=${Date.now()}`
                 const tempConfig = await ofetch<ISubscriptionPageAppConfig>(
-                    baseUrl + import.meta.env.BASE_URL + urlPrefix,
+                    baseUrl + urlPrefix,
                     {
                         parseResponse: JSON.parse
                     }

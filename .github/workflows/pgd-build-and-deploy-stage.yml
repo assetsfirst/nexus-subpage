@@ -1,9 +1,9 @@
-name: Build and deploy frontend to stage
+name: PGD Build and deploy frontend to stage
 
 on:
   push:
     branches:
-      - marzban
+      - pgd
 
   workflow_dispatch:
 
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: marzban
+          ref: pgd
       - uses: actions/setup-node@v4
         with:
           node-version: '22.21.1'
@@ -36,20 +36,20 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H "$PANEL_HOST" >> ~/.ssh/known_hosts
         env:
-          PANEL_HOST: ${{ secrets.STAGE_PANEL_HOST }}
+          PANEL_HOST: ${{ secrets.PGD_STAGE_PANEL_HOST }}
       - name: Create assets folder if not exists
         run: |
           ssh $REMOTE_USER@$PANEL_HOST '
-            mkdir -p /var/lib/marzban/nexus-sub
+            mkdir -p /var/lib/pasarguard/templates/subscription
           '
         env:
-          PANEL_HOST: ${{ secrets.STAGE_PANEL_HOST }}
+          PANEL_HOST: ${{ secrets.PGD_STAGE_PANEL_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
       - name: Upload assets to remote host
         run: |
-          scp -r ./dist/assets $REMOTE_USER@$PANEL_HOST:/var/lib/marzban/nexus-sub
-          scp -r ./dist/locales $REMOTE_USER@$PANEL_HOST:/var/lib/marzban/nexus-sub
-          scp -r ./dist/index.html $REMOTE_USER@$PANEL_HOST:/var/lib/marzban/templates/subscription/index.html
+          scp -r ./dist/assets $REMOTE_USER@$PANEL_HOST:/var/lib/pasarguard/templates/subscription
+          scp -r ./dist/locales $REMOTE_USER@$PANEL_HOST:/var/lib/pasarguard/templates/subscription
+          scp -r ./dist/index.html $REMOTE_USER@$PANEL_HOST:/var/lib/pasarguard/templates/subscription/index.html
         env:
-          PANEL_HOST: ${{ secrets.STAGE_PANEL_HOST }}
+          PANEL_HOST: ${{ secrets.PGD_STAGE_PANEL_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}

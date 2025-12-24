@@ -6,7 +6,7 @@
         ],
         "branding": {
             "name": "Nexus",
-            "logoUrl": "/nexus-sub/assets/logo.png",
+            "logoUrl": "/assets/logo.png",
             "renewUrl": "https://t.me/nexus_assetsfirst_bot?start=renew",
             "supportUrl": "https://t.me/nexus_assetsfirst_bot"
         }

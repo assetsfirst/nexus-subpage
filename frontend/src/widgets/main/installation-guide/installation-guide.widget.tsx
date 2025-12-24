@@ -111,7 +111,7 @@ export const InstallationGuideWidget = ({
             window.open(encodedUrl, '_blank')
         } else {
             const baseUrl = window.location.origin
-            window.open(`${baseUrl}${import.meta.env.BASE_URL}/assets/redirect-page?redirect_to=${urlScheme}${subscriptionUrl}`, '_blank')
+            window.open(`${baseUrl}/assets/redirect-page?redirect_to=${urlScheme}${subscriptionUrl}`, '_blank')
         }
     }
 
