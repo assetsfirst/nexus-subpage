@@ -47,9 +47,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
       - name: Upload assets to remote host
         run: |
-          scp -r ./dist/assets $REMOTE_USER@$PANEL_HOST:/var/lib/pasarguard/templates/subscription
-          scp -r ./dist/locales $REMOTE_USER@$PANEL_HOST:/var/lib/pasarguard/templates/subscription
-          scp -r ./dist/index.html $REMOTE_USER@$PANEL_HOST:/var/lib/pasarguard/templates/subscription/index.html
+          scp -r ./dist $REMOTE_USER@$PANEL_HOST:/var/lib/pasarguard/templates/subscription
         env:
           PANEL_HOST: ${{ secrets.PGD_STAGE_PANEL_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
