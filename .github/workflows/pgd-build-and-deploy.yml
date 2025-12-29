@@ -1,10 +1,6 @@
-name: PGD Build and deploy frontend to stage
+name: PGD Build and deploy frontend to prod
 
 on:
-  push:
-    branches:
-      - pgd
-
   workflow_dispatch:
 
 jobs:
